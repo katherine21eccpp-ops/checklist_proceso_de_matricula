@@ -1,0 +1,113 @@
+<style>
+    .admin-checklist {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        max-width: 600px;
+        margin: 10px auto;
+        border: 2px solid #a61d21; /* Rojo Institucional */
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .admin-header {
+        background-color: #a61d21;
+        color: #d4af37; /* Dorado */
+        padding: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .admin-section {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .admin-section:last-child {
+        border-bottom: none;
+    }
+
+    .admin-section h4 {
+        margin: 0 0 10px 0;
+        color: #a61d21;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        border-bottom: 1px solid #d4af37;
+        display: block;
+        padding-bottom: 3px;
+    }
+
+    .check-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .check-item input[type="checkbox"] {
+        margin-right: 12px;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+        accent-color: #a61d21;
+    }
+
+    .info-tag {
+        background-color: #f8f9fa;
+        border-left: 3px solid #6c757d; /* Gris */
+        padding: 6px 12px;
+        margin-top: 4px;
+        font-size: 0.82rem;
+        color: #666;
+        font-style: italic;
+    }
+
+    .doc-group {
+        padding-left: 5px;
+    }
+</style>
+
+<div class="admin-checklist">
+    <div class="admin-header">
+        Control de Matriculación - Licencia Tipo C
+    </div>
+
+    <div class="admin-section">
+        <label class="check-item">
+            <input type="checkbox"> <strong>1. Gestión de Ingreso</strong>
+        </label>
+        <div class="info-tag">Registro de preinscripción o atención inicial en ventanilla.</div>
+    </div>
+
+    <div class="admin-section">
+        <h4>2. Documentación (Carpeta Colgante)</h4>
+        <div class="doc-group">
+            <label class="check-item"><input type="checkbox"> 3 Copias de Cédula a color</label>
+            <label class="check-item"><input type="checkbox"> 3 Copias de Certificado de Votación</label>
+            <label class="check-item"><input type="checkbox"> Tipo de Sangre (Cruz Roja)</label>
+            <label class="check-item"><input type="checkbox"> 3 Fotos tamaño carnet (Actualizadas)</label>
+            <label class="check-item"><input type="checkbox"> Título de Bachiller / Acta / Promociones</label>
+            <label class="check-item"><input type="checkbox"> Correo electrónico y Números telefónicos</label>
+        </div>
+    </div>
+
+    <div class="admin-section">
+        <h4>3. Gestión de Evaluaciones</h4>
+        <label class="check-item">
+            <input type="checkbox"> <strong>Pago y Aprobación de Exámenes</strong>
+        </label>
+        <div class="info-tag">Incluye: Médico, Psicológico y Psicosensométrico.</div>
+    </div>
+
+    <div class="admin-section" style="background-color: #fffdf5;">
+        <label class="check-item">
+            <input type="checkbox"> <strong>4. Legalización Final</strong>
+        </label>
+        <div class="info-tag">Matrícula asentada oficialmente en el sistema.</div>
+    </div>
+</div>
